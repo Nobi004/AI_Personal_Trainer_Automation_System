@@ -1,0 +1,73 @@
+# Core Django
+Django==4.2.7
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+django-environ==0.11.2
+django-extensions==3.2.3
+
+# Database
+django-db-backup==4.0.2
+
+# Authentication & Security
+djangorestframework-simplejwt==5.3.0
+django-ratelimit==4.1.0
+cryptography==41.0.7
+
+# API & HTTP
+requests==2.31.0
+httpx==0.25.2
+
+# AI & Machine Learning
+openai==1.3.5
+langchain==0.0.350
+tiktoken==0.5.2
+
+# WhatsApp Integration
+twilio==8.10.3
+python-whatsapp-business-api==0.0.3
+
+# Background Tasks & Scheduling
+celery==5.3.4
+redis==5.0.1
+django-celery-beat==2.5.0
+django-celery-results==2.5.1
+
+# Email
+django-anymail==10.2
+sendgrid==6.10.0
+
+# File Processing & Reports
+Pillow==10.1.0
+reportlab==4.0.7
+weasyprint==60.2
+jinja2==3.1.2
+matplotlib==3.8.2
+pandas==2.1.4
+
+# Internationalization
+django-modeltranslation==0.18.11
+
+# Monitoring & Logging
+sentry-sdk==1.38.0
+django-debug-toolbar==4.2.0
+
+# Testing
+pytest==7.4.3
+pytest-django==4.7.0
+factory-boy==3.3.0
+coverage==7.3.2
+
+# Production
+gunicorn==21.2.0
+whitenoise==6.6.0
+psycopg2-binary==2.9.9
+
+# AWS Integration (for scaling)
+boto3==1.34.0
+django-storages==1.14.2
+
+# Utilities
+python-decouple==3.8
+pytz==2023.3
+python-dateutil==2.8.2
+validators==0.22.0
