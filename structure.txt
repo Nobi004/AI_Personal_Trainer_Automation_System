@@ -1,0 +1,91 @@
+Project Structure:
+ai_personal_trainer/
+├── manage.py
+├── requirements.txt
+├── .env.example
+├── docker-compose.yml
+├── Dockerfile
+├── README.md
+├── config/
+│   ├── __init__.py
+│   ├── settings/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── development.py
+│   │   ├── production.py
+│   │   └── testing.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+├── apps/
+│   ├── __init__.py
+│   ├── users/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   ├── admin.py
+│   │   ├── managers.py
+│   │   └── migrations/
+│   ├── chatbot/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── whatsapp_handler.py
+│   │   ├── message_processor.py
+│   │   ├── urls.py
+│   │   └── migrations/
+│   ├── ai_engine/
+│   │   ├── __init__.py
+│   │   ├── openai_client.py
+│   │   ├── plan_generator.py
+│   │   ├── progress_analyzer.py
+│   │   └── prompts/
+│   ├── notifications/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── email_service.py
+│   │   ├── whatsapp_service.py
+│   │   ├── scheduler.py
+│   │   └── migrations/
+│   ├── reports/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── generators.py
+│   │   ├── pdf_generator.py
+│   │   └── migrations/
+│   └── core/
+│       ├── __init__.py
+│       ├── middleware.py
+│       ├── permissions.py
+│       ├── pagination.py
+│       ├── exceptions.py
+│       └── utils.py
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── templates/
+│   ├── base.html
+│   ├── emails/
+│   └── reports/
+├── locale/
+│   ├── en/
+│   └── es/
+├── media/
+│   └── reports/
+├── tests/
+│   ├── __init__.py
+│   ├── test_users.py
+│   ├── test_chatbot.py
+│   ├── test_ai_engine.py
+│   └── test_notifications.py
+├── scripts/
+│   ├── deploy.sh
+│   ├── backup_db.py
+│   └── populate_test_data.py
+└── docs/
+    ├── api_documentation.md
+    ├── deployment_guide.md
+    └── user_manual.md
